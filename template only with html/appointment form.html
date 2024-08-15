@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <style>
+        body {
+            background-image: url('images/orange.jpg');
+            backdrop-filter: blur(60%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .form-container input::placeholder,
+        .form-container select::placeholder,
+        .form-container textarea::placeholder {
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Appointment Form</h2>
+        <form action="/submit-appointment" method="post">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            <input type="date" id="date" name="date" required>
+            <input type="time" id="time" name="time" required>
+            <select id="service" name="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="consultation">Consultation</option>
+                <option value="checkup">Check-Up</option>
+                <option value="treatment">Treatment</option>
+            </select>
+            <textarea id="message" name="message" rows="4" placeholder="Additional Notes"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
