@@ -5,6 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorer - Travel Expert</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content h1,
+.header-content nav ul li a {
+    color: #333;
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('images/as.jpg'); /* Replace with your image file path */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #8a2151;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #5f1342;
+}
+
+.hero-content .highlight {
+    color: #8a2151;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.search-bar select,
+.search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #8a2151;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.destinations {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.destinations h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.destination-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.card p {
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.card button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #d44141;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-us h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.contact-us form {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+.contact-us form label {
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-us form input,
+.contact-us form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-us form button {
+    padding: 15px;
+    background-color: #d44141;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    </style>
 </head>
 <body>
     <header>
